@@ -83,7 +83,6 @@ const CartProduct = ({cartItem}: CartProductProps) => {
                     <Pressable 
                     onPress={()=> {
                         onMinus();
-                        createTwoButtonAlert();
                     }} 
                     style={styles.button}>
                         <Text style={styles.buttonText}>-</Text>
@@ -91,7 +90,6 @@ const CartProduct = ({cartItem}: CartProductProps) => {
                     <Text style={styles.numberquantity}>{quantity}</Text>
                     <Pressable onPress={()=>{
                         onPlus();
-                        updateQuantity();
                         }} style={styles.button}>
                         <Text style={styles.buttonText}>+</Text>
                     </Pressable>
